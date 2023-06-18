@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@dgaa/store-subject": ["libs/store-subject/src/index.ts"]
+      "@dgaa/store-subject": ["libs/store-subject/src/index.ts"],
+      "@dgaa/use-store-subscribe": ["libs/use-store-subscribe/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

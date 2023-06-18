@@ -1,36 +1,36 @@
 {
-  "name": "@dgaa/store-subject",
+  "name": "@dgaa/use-store-subscribe",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/store-subject/src",
+  "sourceRoot": "libs/use-store-subscribe/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/store-subject",
-        "tsConfig": "libs/store-subject/tsconfig.lib.json",
-        "packageJson": "libs/store-subject/package.json",
-        "main": "libs/store-subject/src/index.ts",
-        "assets": ["libs/store-subject/*.md"]
+        "outputPath": "dist/libs/use-store-subscribe",
+        "tsConfig": "libs/use-store-subscribe/tsconfig.lib.json",
+        "packageJson": "libs/use-store-subscribe/package.json",
+        "main": "libs/use-store-subscribe/src/index.ts",
+        "assets": ["libs/use-store-subscribe/*.md"]
       }
     },
     "publish": {
-      "command": "node tools/scripts/publish.mjs store-subject {args.ver} {args.tag}",
+      "command": "node tools/scripts/publish.mjs use-store-subscribe {args.ver} {args.tag}",
       "dependsOn": ["build"]
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/store-subject/**/*.ts"]
+        "lintFilePatterns": ["libs/use-store-subscribe/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/store-subject/jest.config.ts",
+        "jestConfig": "libs/use-store-subscribe/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {

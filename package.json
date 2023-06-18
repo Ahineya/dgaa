@@ -2,7 +2,11 @@
   "name": "@dgaa/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "nx affected:build",
+    "lint": "nx affected:lint",
+    "test": "nx affected:test"
+  },
   "private": true,
   "dependencies": {
     "@swc/helpers": "~0.5.0",

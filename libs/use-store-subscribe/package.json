@@ -1,11 +1,13 @@
 {
-  "name": "@dgaa/store-subject",
-  "version": "0.0.3",
-  "description": "A very simplified replacement for Rx.js BehaviorSubject to be used as a separate package",
+  "name": "@dgaa/use-store-subscribe",
+  "version": "0.0.1",
+  "description": "A simple hook to subscribe to the StoreSubject from @dgaa/store-subject",
   "keywords": [
     "behaviorsubject",
     "event",
-    "observable"
+    "observable",
+    "react",
+    "hook"
   ],
   "homepage": "https://github.com/ahineya/dgaa",
   "bugs": {
