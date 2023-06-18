@@ -4,7 +4,7 @@ A collection of libraries and tools I repeatedly use in my projects.
 
 ## Libraries
 
-### [dgaa/libs/store-subject](Store Subject)
+### [Store Subject](https://github.com/ahineya/dgaa/blob/main/libs/store-subject)
 
 A simple store subject that can be used to store and retrieve data in a reactive way.
 
