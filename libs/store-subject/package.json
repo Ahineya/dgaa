@@ -1,0 +1,26 @@
+{
+  "name": "@dgaa/store-subject",
+  "version": "0.0.1",
+  "description": "A very simplified replacement for Rx.js BehaviorSubject to be used as a separate package",
+  "keywords": [
+    "behaviorsubject",
+    "event",
+    "observable"
+  ],
+  "homepage": "https://github.com/",
+  "bugs": {
+    "url": "https://github.com/UserName/package-name/issues",
+    "email": "your-public-email@example.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UserName/package-name.git"
+  },
+  "author": "Joe Bloggs <your-public-email@example.com> (your-website.com)",
+  "license": "MIT",
+  "private": false
+}
