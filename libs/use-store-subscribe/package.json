@@ -1,6 +1,6 @@
 {
   "name": "@dgaa/use-store-subscribe",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "A simple hook to subscribe to the StoreSubject from @dgaa/store-subject",
   "keywords": [
     "behaviorsubject",

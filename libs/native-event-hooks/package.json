@@ -1,7 +1,7 @@
 {
   "name": "@dgaa/native-event-hooks",
 
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "React hooks for working with native browser events",
   "keywords": [
     "event"

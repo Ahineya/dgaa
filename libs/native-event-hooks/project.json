@@ -1,5 +1,5 @@
 {
-  "name": "native-event-hooks",
+  "name": "@dgaa/native-event-hooks",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/native-event-hooks/src",
   "projectType": "library",
@@ -16,7 +16,7 @@
       }
     },
     "publish": {
-      "command": "node tools/scripts/publish.mjs native-event-hooks {args.ver} {args.tag}",
+      "command": "node tools/scripts/publish.mjs @dgaa/native-event-hooks {args.ver} {args.tag} {args.otp}",
       "dependsOn": ["build"]
     },
     "lint": {
