@@ -1,0 +1,27 @@
+{
+  "name": "@dgaa/use-keybinding",
+  "version": "0.0.4",
+  "description": "React hook for handling global keyboard events",
+  "keywords": [
+    "event",
+    "react",
+    "hook",
+    "keyboard"
+  ],
+  "homepage": "https://github.com/ahineya/dgaa",
+  "bugs": {
+    "url": "https://github.com/ahineya/dgaa/issues",
+    "email": "deadswallow@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahineya/dgaa.git"
+  },
+  "author": "Pavlo Yevsehnieiev <deadswallow@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  }
+}

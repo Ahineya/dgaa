@@ -1,0 +1,45 @@
+{
+  "name": "@dgaa/use-keybinding",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/use-keybinding/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/use-keybinding",
+        "tsConfig": "libs/use-keybinding/tsconfig.lib.json",
+        "packageJson": "libs/use-keybinding/package.json",
+        "main": "libs/use-keybinding/src/index.ts",
+        "assets": ["libs/use-keybinding/*.md"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs @dgaa/use-keybinding {args.ver} {args.tag} {args.otp}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/use-keybinding/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/use-keybinding/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

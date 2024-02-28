@@ -1,9 +1,12 @@
 import './app.scss';
 import {useClickOutside, useWindowResize} from "@dgaa/native-event-hooks";
 import {useRef, useState} from "react";
+import {useKeybinding} from "@dgaa/use-keybinding";
+import {UseKeybindingDemo} from "./components/use-keybinding-demo/use-keybinding-demo";
 
 const Component = () => {
   const [show, setShow] = useState(false);
+
 
   useClickOutside('.something-another', () => {
     console.log('Clicked outside by selector', show);
@@ -19,6 +22,7 @@ const Component = () => {
 };
 
 export function App() {
+
   const ref = useRef<HTMLDivElement>(null);
 
   useWindowResize((width, height) => {
@@ -42,7 +46,10 @@ export function App() {
 
       <div ref={ref} className="click-outside">Click outside</div>
 
+
       <Component />
+
+      <UseKeybindingDemo/>
     </div>
   );
 }

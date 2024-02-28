@@ -16,3 +16,7 @@ A React hook to subscribe to a store subject.
 ### [native-event-hooks](https://github.com/ahineya/dgaa/blob/main/libs/native-event-hooks)
 
 Hooks like `useClickOutside`, and `useWindowResize` to listen to native events.
+
+### [use-keybinding](https://github.com/ahineya/dgaa/blob/main/libs/use-keybinding)
+
+A React hook to listen to gloabal keyboard events, with abilities to cancel events inside inputs and assigning keybindings per app state.
