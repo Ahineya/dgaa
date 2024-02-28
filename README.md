@@ -13,5 +13,6 @@ A simple store subject that can be used to store and retrieve data in a reactive
 
 A React hook to subscribe to a store subject.
 
+### [native-event-hooks](https://github.com/ahineya/dgaa/blob/main/libs/native-event-hooks)
 
-
+Hooks like `useClickOutside`, and `useWindowResize` to listen to native events.

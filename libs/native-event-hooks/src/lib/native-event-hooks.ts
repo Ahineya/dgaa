@@ -56,7 +56,6 @@ export function useClickOutside(trackedSelectors: string[] | string | React.RefO
 }
 
 export function useWindowResize(callback: (width: number, height: number) => void, deps: any[] = []) {
-
   const callbackWithSize = () => callback(window.innerWidth, window.innerHeight);
 
   callback(window.innerWidth, window.innerHeight);
