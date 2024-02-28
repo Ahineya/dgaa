@@ -1,0 +1,7 @@
+.image-dropper {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+
+  border: 1px dashed var(--color-border);
+}

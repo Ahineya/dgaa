@@ -1,13 +1,10 @@
 {
-  "name": "@dgaa/use-store-subscribe",
-  "version": "0.0.2",
-  "description": "A simple hook to subscribe to the StoreSubject from @dgaa/store-subject",
+  "name": "@dgaa/native-event-hooks",
+
+  "version": "0.0.1",
+  "description": "React hooks for working with native browser events",
   "keywords": [
-    "behaviorsubject",
-    "event",
-    "observable",
-    "react",
-    "hook"
+    "event"
   ],
   "homepage": "https://github.com/ahineya/dgaa",
   "bugs": {

@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@dgaa/native-event-hooks": ["libs/native-event-hooks/src/index.ts"],
       "@dgaa/store-subject": ["libs/store-subject/src/index.ts"],
       "@dgaa/use-store-subscribe": ["libs/use-store-subscribe/src/index.ts"]
     }

@@ -1,6 +1,6 @@
 {
   "name": "@dgaa/store-subject",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A very simplified replacement for Rx.js BehaviorSubject to be used as a separate package",
   "keywords": [
     "behaviorsubject",
@@ -18,5 +18,9 @@
   },
   "author": "Pavlo Yevsehnieiev <deadswallow@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  }
 }

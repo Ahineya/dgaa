@@ -1,0 +1,45 @@
+{
+  "name": "native-event-hooks",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/native-event-hooks/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/native-event-hooks",
+        "tsConfig": "libs/native-event-hooks/tsconfig.lib.json",
+        "packageJson": "libs/native-event-hooks/package.json",
+        "main": "libs/native-event-hooks/src/index.ts",
+        "assets": ["libs/native-event-hooks/*.md"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs native-event-hooks {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/native-event-hooks/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/native-event-hooks/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}
